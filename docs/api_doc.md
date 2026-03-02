@@ -78,20 +78,17 @@ Authorization: Bearer <token>
 3. Get All Content (List + Search + Pagination)
    GET /contents
 
-http://localhost:3000/api/contents?page=1&limit=5&search=Judul_artikel_2
+http://localhost:3000/api/contents
 
 Response 200 OK:
 {
 "success": true,
-"message": "Content created successfully.",
-"data": {
-"id": 4,
-"title": "Judul Artikel 2",
-"body": "Lorem ipsum dolor sir amet.....",
-"status": "published",
-"user_id": 1,
-"created_at": "2026-03-01T10:56:16.143Z",
-"updated_at": "2026-03-01T10:56:16.143Z"
+"data": [...],
+"pagination": {
+"total": 10,
+"page": 1,
+"limit": 5,
+"totalPages": 2
 }
 }
 
